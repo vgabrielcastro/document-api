@@ -1,35 +1,35 @@
 {
-    "name": "backend",
-    "version": "1.0.0",
-    "description": "",
-    "main": "dist/server.js",
-    "scripts": {
-        "dev": "tsx --watch src/index.ts",
-        "build": "tsc",
-        "start": "tsx src/server.ts",
-        "test": "echo \"no tests yet\""
-    },
-    "keywords": [],
-    "author": "Vinicius Gabriel Castro",
-    "license": "ISC",
-    "type": "module",
-    "dependencies": {
-        "@fastify/cors": "^11.2.0",
-        "@fastify/formbody": "^8.0.2",
-        "@fastify/swagger": "9.7.0",
-        "@prisma/adapter-pg": "7.4.0",
-        "@prisma/client": "5.19.1",
-        "@scalar/fastify-api-reference": "1.44.20",
-        "fastify": "^5.7.4",
-        "zod": "^4.3.6"
-    },
-    "devDependencies": {
-        "@types/node": "24",
-        "globals": "^17.3.0",
-        "prettier": "3.8.1",
-        "prisma": "^6.19.2",
-        "tsx": "4.21.0",
-        "typescript": "5.9.3",
-        "typescript-eslint": "^8.56.0"
-    }
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/server.js",
+  "scripts": {
+    "dev": "tsx --watch src/index.ts",
+    "build": "prisma generate && tsc",
+    "start": "tsx src/index.ts",
+    "test": "echo \"no tests yet\""
+  },
+  "keywords": [],
+  "author": "Vinicius Gabriel Castro",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@fastify/cors": "^11.2.0",
+    "@fastify/formbody": "^8.0.2",
+    "@fastify/swagger": "9.7.0",
+    "@prisma/client": "^6.19.2",
+    "@scalar/fastify-api-reference": "1.44.20",
+    "fastify": "^5.7.4",
+    "zod": "^4.3.6"
+  },
+  "devDependencies": {
+    "@types/node": "24",
+    "globals": "^17.3.0",
+    "prettier": "3.8.1",
+    "prisma": "^6.19.2",
+    "tsx": "4.21.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "^8.56.0",
+    "vitest": "^3.2.4"
+  }
 }

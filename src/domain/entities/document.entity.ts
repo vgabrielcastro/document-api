@@ -1,9 +1,9 @@
 export type DocumentStatus = "pending" | "signed";
 
-export interface Document {
+export interface DocumentEntity {
   id: string;
   title: string;
   description: string;
   status: DocumentStatus;
-  created_at: string;
+  created_at: Date;
 }
